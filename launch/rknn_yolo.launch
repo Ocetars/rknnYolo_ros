@@ -1,0 +1,11 @@
+<launch>
+    <node name="SERVER" pkg="rknn_yolo" type="SERVER.py" output="log" />
+    <node name="orangeYoloMain" pkg="rknn_yolo" type="orangeYoloMain.py" output="log" />
+    
+    <node name="Filter_armor" pkg="rknn_yolo" type="Filter_armor.py" output="screen" />
+    <node name="Filter_tent" pkg="rknn_yolo" type="Filter_tent.py" output="screen" />
+    <node name="Filter_bridge" pkg="rknn_yolo" type="Filter_bridge.py" output="screen" />
+    <node name="Filter_fort" pkg="rknn_yolo" type="Filter_fort.py" output="screen" />
+    <node name="Filter_H" pkg="rknn_yolo" type="Filter_H.py" output="screen" />
+    <node name="Filter_tank" pkg="rknn_yolo" type="Filter_tank.py" output="screen" />
+</launch>
